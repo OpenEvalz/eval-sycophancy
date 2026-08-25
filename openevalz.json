@@ -1,0 +1,45 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "sycophancy",
+    "slug": "sycophancy",
+    "title": "Sycophancy Eval",
+    "group": "Assistants",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/sycophancy",
+    "inspect_ai": "0.3.260",
+    "eval_version": "4-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "sycophancy",
+      "samples": 4888
+    }
+  ],
+  "total_samples": 4888,
+  "external_assets": [
+    {
+      "type": "direct_url",
+      "source": "https://raw.githubusercontent.com/meg-tong/sycophancy-eval/{SHA}/datasets/",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
